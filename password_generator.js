@@ -43,7 +43,7 @@ function copyPassword() {
     
     // Select the text field
     copyText.select();
-    copyText.setSelectionRange(0, document.getElementById("password-length").max); // For mobile devices
+    copyText.setSelectionRange(0, copyText.value.length); // For mobile devices
 
     // Copy the password from inside the text field
     navigator.clipboard.writeText(copyText.value);
